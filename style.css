@@ -1,0 +1,29 @@
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: cursive;
+}
+
+.block {
+    width: 60px;
+    height: 60px;
+    background: orangered;
+    animation: 1.4s spinner ease-in-out infinite both;
+}
+
+@keyframes spinner {
+    from {
+        transform: scale(1) rotate(0);
+    }
+    50% {
+        transform: scale(2) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
